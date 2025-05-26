@@ -3,33 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Big Wave Roofing Inc. is a veteran-owned roofing company based in Brevard County, FL, delivering high-quality, customer-focused residential roofing solutions with integrity and precision.">
-  <meta name="keywords" content="Brevard County roofing, Rockledge FL roofer, veteran owned roofing, Melbourne FL roof repair, residential roofing Brevard, Big Wave Roofing Inc, roof replacement, storm damage repair, trustworthy roofers FL">
+  <meta name="description" content="Big Wave Roofing Inc. is a veteran-owned roofing company in Brevard County, FL, focused on delivering personalized, high-quality roofing services.">
+  <meta name="keywords" content="Brevard County roofing, Rockledge FL roofer, veteran roofing company, Melbourne FL roof repair, Big Wave Roofing Inc, storm damage roofing">
   <meta name="author" content="Big Wave Roofing Inc">
-  <title>Big Wave Roofing Inc | Trusted Roofing in Brevard County, FL</title>
+  <title>Big Wave Roofing Inc | Brevard County, FL</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
       background-color: #ffffff;
       color: #003366;
     }
-    header, footer {
+    header {
       background: #003366;
       color: #ffffff;
-      padding: 1em 0;
-      text-align: center;
+      padding: 1.5em 1em;
     }
-    header img {
-      max-height: 100px;
-      margin-bottom: 10px;
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 2em;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .header-content img {
+      max-height: 200px;
+      width: auto;
+      flex-shrink: 0;
+    }
+    .header-text h1 {
+      color: #ffffff;
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .header-text p {
+      color: #ffffff;
+      margin: 0.5em 0 0 0;
+      font-size: 1.1em;
+    }
+    nav {
+      text-align: center;
+      margin-top: 1em;
     }
     nav a {
       color: #ffffff;
       margin: 0 1em;
       text-decoration: none;
+      font-weight: bold;
     }
     .container {
       max-width: 960px;
@@ -38,16 +61,72 @@
       padding: 2em;
       border-radius: 8px;
     }
-    h1, h2 {
+    h2 {
       color: #005599;
+    }
+    .call-button {
+      display: block;
+      width: fit-content;
+      margin: 1em auto;
+      background-color: #0077cc;
+      color: white;
+      padding: 0.75em 1.5em;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.1em;
+      border-radius: 5px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 1em;
+    }
+    input, textarea {
+      padding: 0.75em;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    input[type=submit] {
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    input[type=submit]:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      background: #003366;
+      color: #ffffff;
+      padding: 2em 1em;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-content img {
+        max-height: 150px;
+      }
+      .call-button {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="big-wave-logo.png" alt="Big Wave Roofing Inc Logo">
-    <h1>Big Wave Roofing Inc.</h1>
-    <p>Veteran-Owned | Trusted Brevard County Roofer</p>
+    <div class="header-content">
+      <img src="big-wave-logo.png" alt="Big Wave Roofing Inc Logo">
+      <div class="header-text">
+        <h1>Big Wave Roofing Inc.</h1>
+        <p>Veteran-Owned | Trusted Brevard County Roofer</p>
+      </div>
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -58,35 +137,44 @@
   <div class="container">
     <section id="about">
       <h2>About Us</h2>
-      <p>Welcome to Big Wave Roofing Inc., where craftsmanship meets commitment. Based in the heart of Brevard County at 1007 Pathfinder Way, Suite 100, Rockledge, FL, we are proud to be a locally owned and operated roofing company led by a disabled veteran and former Melbourne, FL roofing inspector. Our team brings unmatched knowledge and genuine care to every project we take on.</p>
-      <p>At Big Wave Roofing, our philosophy is simple — treat every roof as if it protects our own home. Unlike high-volume contractors, we choose to focus on fewer projects to deliver exceptional quality and undivided attention. We believe in clear communication, transparency, and doing the job right the first time, every time. As a veteran-led company, integrity, honor, and service are at the core of everything we do.</p>
+      <p>Big Wave Roofing Inc. is a locally owned and operated company based in Rockledge, FL. Founded by a disabled veteran and former Melbourne roofing inspector, we take pride in delivering expert craftsmanship with integrity. We prioritize quality over volume, giving each homeowner our full attention and respect.</p>
     </section>
 
     <section id="services">
       <h2>Our Roofing Services</h2>
       <ul>
-        <li>Thorough Residential Roof Inspections</li>
-        <li>Precision Roof Repairs and Full Replacements</li>
-        <li>Asphalt Shingle, Metal, and Flat Roofing Solutions</li>
-        <li>Comprehensive Storm and Wind Damage Restoration</li>
-        <li>Veteran and Senior Citizen Discounts</li>
+        <li>Residential Roof Inspections</li>
+        <li>Storm and Wind Damage Repairs</li>
+        <li>Shingle, Metal & Flat Roof Installations</li>
+        <li>Veteran & Senior Citizen Discounts</li>
       </ul>
-      <p>We specialize in residential roofing services throughout Brevard County, Florida, providing homeowners with reliable roofing systems built to last. Whether you need a small repair or a full replacement, we approach every job with precision, pride, and professionalism. Your satisfaction is not just a goal — it's our promise.</p>
+    </section>
+
+    <section>
+      <a class="call-button" href="tel:+13215557663">📞 Call Us Now: (321) 555-7663</a>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
       <p><strong>Big Wave Roofing Inc.</strong><br>
-      1007 Pathfinder Way, Suite 100<br>
-      Rockledge, FL 32955<br>
-      Phone: (321) 555-ROOF<br>
-      Email: info@bigwaveroofing.com</p>
-      <p>We proudly serve all of Brevard County, including Melbourne, Rockledge, Cocoa, Titusville, Palm Bay, and neighboring communities. Contact us today for a free estimate and experience roofing done right — with integrity and heart.</p>
+        1007 Pathfinder Way, Suite 100<br>
+        Rockledge, FL 32955<br>
+        Phone: (321) 555-7663<br>
+        Email: sales@bigwaveroofing.com</p>
+
+      <form action="mailto:sales@bigwaveroofing.com" method="POST" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <input type="tel" name="Phone" placeholder="Your Phone Number">
+        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
     </section>
   </div>
 
   <footer>
     <p>&copy; 2025 Big Wave Roofing Inc. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
