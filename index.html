@@ -163,13 +163,22 @@ At Big Wave Roofing, our philosophy is simple — treat every roof as if it prot
         Phone: (321) 555-7663<br>
         Email: sales@bigwaveroofing.com</p>
 
-      <form action="mailto:sales@bigwaveroofing.com" method="POST" enctype="text/plain">
-        <input type="text" name="Name" placeholder="Your Name" required>
-        <input type="email" name="Email" placeholder="Your Email" required>
-        <input type="tel" name="Phone" placeholder="Your Phone Number">
-        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
-        <input type="submit" value="Send Message">
-      </form>
+     <form action="https://formsubmit.co/sales@bigwaveroofing.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://bigwaveroofing.com/thank-you.html">
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
     </section>
   </div>
 
